@@ -57,7 +57,7 @@ export default extendTheme({
           borderRadius: 0,
           paddingInlineStart: ["inherit", 0],
           paddingInlineEnd: ["inherit", 0],
-          _hover: {color: "primary.300"},
+          _hover: {textDecoration: "underline"},
         },
         "header-link": {
           color: "primary.700",
