@@ -51,6 +51,16 @@ export default extendTheme({
             bg: "black",
           },
         },
+        solid: {
+          bg: "primary.500",
+          boxShadow: "rgba(0, 0, 0, 0.1) 0px 2px 4px",
+          color: "white",
+          w: 48,
+          borderRadius: "full",
+          _hover: {
+            bg: "primary.400",
+          },
+        },
         "footer-link": {
           h: 8,
           color: "white",
@@ -63,15 +73,6 @@ export default extendTheme({
           color: "primary.700",
           fontWeight: "400",
           height: "100%",
-        },
-        "request-invite": {
-          bgGradient: "linear(to-r,primary.300, primary.500)",
-          color: "white",
-          w: 48,
-          borderRadius: "full",
-          _hover: {
-            bgGradient: "linear(to-r,primary.200, primary.400)",
-          },
         },
         "mobile-menu-link": {
           color: "primary.900",
