@@ -55,7 +55,7 @@ export default extendTheme({
           bg: "primary.500",
           boxShadow: "rgba(0, 0, 0, 0.1) 0px 2px 4px",
           color: "white",
-          w: 48,
+          w: 72,
           borderRadius: "full",
           _hover: {
             bg: "primary.400",
@@ -69,35 +69,18 @@ export default extendTheme({
           paddingInlineEnd: ["inherit", 0],
           _hover: {textDecoration: "underline"},
         },
-        "header-link": {
-          color: "primary.700",
-          fontWeight: "400",
-          height: "100%",
-        },
-        "mobile-menu-link": {
-          color: "primary.900",
-          h: 10,
-          fontSize: "lg",
-          fontWeight: "300",
-        },
-      },
-    },
-    Heading: {
-      baseStyle: {
-        color: "primary.900",
-      },
-    },
-    Modal: {
-      baseStyle: {
-        overlay: {
-          bg: "linear-gradient(hsla(233, 26%, 24%,.6) 50%,hsla(0, 100%, 100%,.3))",
-          maxHeight: "90vh",
-          top: "10vh",
-        },
-        dialog: {
-          maxHeight: "40%",
-          top: "6vh",
-          w: "90%",
+        "header-button": {
+          bg: "white",
+          borderRadius: "full",
+          color: "primary.300",
+          fontWeight: "700",
+          fontSize: ["xs", "sm"],
+          boxShadow:
+            "rgba(0, 0, 0, 0.1) -2px -2px 4px, rgba(0, 0, 0, 0.1) -2px 2px 4px, rgba(0, 0, 0, 0.1) 2px -2px 4px ,rgba(0, 0, 0, 0.1) 2px 2px 4px",
+          px: [6, 12],
+          _hover: {
+            color: "primary.200",
+          },
         },
       },
     },

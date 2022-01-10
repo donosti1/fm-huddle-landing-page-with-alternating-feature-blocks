@@ -68,7 +68,9 @@ const Footer = () => {
     >
       <Container maxWidth="container.xl">
         <Stack alignItems="flex-start" spacing={8}>
-          <Logo fill="white" identifier="footer" />
+          <Stack alignItems="center" h={10} w={48}>
+            <Logo identifier="footer" />
+          </Stack>
           <Stack direction={["column", "row"]} spacing={[2, 2]} width="100%">
             <Stack color="white" flex={2}>
               <Stack direction="row" flex={2} spacing={8}>

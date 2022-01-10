@@ -67,7 +67,7 @@ const FeatureItem = (props: IFeature) => {
 };
 const FeaturesGallery = () => {
   return (
-    <Stack>
+    <Stack paddingY={[8, 32]}>
       <Container maxWidth="container.xl">
         <Stack spacing={8}>
           {featureItems.map((mi) => (

@@ -8,7 +8,7 @@ const CTA: FunctionComponent<CTAProps> = () => {
     <Stack
       alignItems="center"
       bgGradient="linear(to-b, white 50%, primary.300 50%)"
-      paddingY={[8, 32]}
+      paddingBottom={[8, 16]}
     >
       <Stack
         alignItems="center"
