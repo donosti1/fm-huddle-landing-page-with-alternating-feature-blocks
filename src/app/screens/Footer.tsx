@@ -1,6 +1,5 @@
 import React from "react";
-import {Button, Container, Grid, Icon, Image, Stack, Text} from "@chakra-ui/react";
-import {motion} from "framer-motion";
+import {Button, Container, Icon, Image, Stack, Text} from "@chakra-ui/react";
 import {FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
 
 import Logo from "./components/Logo";
@@ -51,7 +50,7 @@ const SocialNetworks = () => {
   ));
 
   return (
-    <Stack direction="row" justifyContent={["center", "flex-end"]} spacing={4}>
+    <Stack direction="row" justifyContent={["center", "flex-start"]} spacing={4}>
       {icons}
     </Stack>
   );
@@ -72,7 +71,7 @@ const Footer = () => {
             <Logo identifier="footer" />
           </Stack>
           <Stack direction={["column", "row"]} spacing={[2, 2]} width="100%">
-            <Stack color="white" flex={2}>
+            <Stack color="white" flex={2} spacing={6}>
               <Stack direction="row" flex={2} spacing={8}>
                 <Image alt="location" height={5} src="/assets/icon-location.svg" width={4} />
                 <Text width={["100%", "76%"]}>
@@ -93,8 +92,11 @@ const Footer = () => {
               <CustomMenuItem menuItems={firstMenu} />
               <CustomMenuItem menuItems={secondMenu} />
             </Stack>
-            <Stack direction="row" flex={1} justifyContent={["center", "inherit"]}>
+            <Stack flex={1} justifyContent={["center", "space-between"]} spacing={[8, 0]}>
               <SocialNetworks />
+              <Text color="white" fontSize={[11, 10]} textAlign={["center", "left"]}>
+                © Copyright 2018 Huddle. All rights reserved.
+              </Text>
             </Stack>
           </Stack>
         </Stack>

@@ -26,12 +26,24 @@ const CTA: FunctionComponent<CTAProps> = () => {
           fontFamily="Poppins"
           fontSize={["md", "3xl"]}
           fontWeight="700"
+          letterSpacing={["-.5px", "inherit"]}
           paddingBottom={2}
           textAlign="center"
         >
           Ready To Build Your Community?
         </Text>
-        <Button variant="solid">Get Started For Free</Button>
+        <Button
+          _hover={{bg: "primary.400"}}
+          bg="primary.500"
+          borderRadius="full"
+          boxShadow="rgba(0, 0, 0, 0.2) 0px 4px 4px"
+          color="white"
+          fontSize={["sm", "md"]}
+          px={[10, 20]}
+          py={[4, 8]}
+        >
+          Get Started For Free
+        </Button>
       </Stack>
     </Stack>
   );

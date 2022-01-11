@@ -1,4 +1,4 @@
-import {extendTheme, theme} from "@chakra-ui/react";
+import {extendTheme} from "@chakra-ui/react";
 
 export default extendTheme({
   styles: {
@@ -51,16 +51,6 @@ export default extendTheme({
             bg: "black",
           },
         },
-        solid: {
-          bg: "primary.500",
-          boxShadow: "rgba(0, 0, 0, 0.1) 0px 2px 4px",
-          color: "white",
-          w: 72,
-          borderRadius: "full",
-          _hover: {
-            bg: "primary.400",
-          },
-        },
         "footer-link": {
           h: 8,
           color: "white",
@@ -76,8 +66,9 @@ export default extendTheme({
           fontWeight: "700",
           fontSize: ["xs", "sm"],
           boxShadow:
-            "rgba(0, 0, 0, 0.1) -2px -2px 4px, rgba(0, 0, 0, 0.1) -2px 2px 4px, rgba(0, 0, 0, 0.1) 2px -2px 4px ,rgba(0, 0, 0, 0.1) 2px 2px 4px",
+            "rgba(100, 100, 100, 0.1) -2px -2px 4px, rgba(100, 100, 100, 0.1) -2px 2px 4px, rgba(100, 100, 100, 0.1) 2px -2px 4px ,rgba(100, 100, 100, 0.1) 2px 2px 4px",
           px: [6, 12],
+          h: [8, "inherit"],
           _hover: {
             color: "primary.200",
           },

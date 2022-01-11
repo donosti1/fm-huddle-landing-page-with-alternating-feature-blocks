@@ -38,7 +38,7 @@ const FeatureItem = (props: IFeature) => {
       alignItems="center"
       bgColor="white"
       borderRadius="lg"
-      boxShadow="rgba(0, 0, 0, 0.1) -2px -2px 4px, rgba(0, 0, 0, 0.1) -2px 2px 4px, rgba(0, 0, 0, 0.1) 2px -2px 4px ,rgba(0, 0, 0, 0.1) 2px 2px 4px"
+      boxShadow="rgba(100, 100, 100, 0.1) -2px -2px 4px, rgba(0, 0, 0, 0.1) -2px 2px 4px, rgba(0, 0, 0, 0.1) 2px -2px 4px ,rgba(0, 0, 0, 0.1) 2px 2px 4px"
       direction={["column-reverse", props.id % 2 == 0 ? "row" : "row-reverse"]}
       justifyContent="center"
       paddingLeft={[8, 32]}
@@ -55,7 +55,7 @@ const FeatureItem = (props: IFeature) => {
         >
           {props.title}
         </Text>
-        <Text color="primary.200" textAlign={["center", "left"]}>
+        <Text color="primary.200" fontSize={["sm", "md"]} textAlign={["center", "left"]}>
           {props.description}
         </Text>
       </Stack>

@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Container, Image, Heading, Stack, Text} from "@chakra-ui/react";
+import {Button, Container, Image, Stack, Text} from "@chakra-ui/react";
 
 import Header from "./components/Header";
 
@@ -36,7 +36,18 @@ const Hero: React.FC = () => {
               Huddle re-imagines the way we build communities. You have a voice, but so does your
               audience. Create connections with your users as you engage in genuine discussion.
             </Text>
-            <Button variant="solid">Get Started For Free</Button>
+            <Button
+              _hover={{bg: "primary.400"}}
+              bg="primary.500"
+              borderRadius="full"
+              boxShadow="rgba(0, 0, 0, 0.2) 0px 4px 4px"
+              color="white"
+              fontSize="sm"
+              py={6}
+              w={72}
+            >
+              Get Started For Free
+            </Button>
           </Stack>
           <Stack alignItems={["center", "flex-end"]} flex={[1, 3]}>
             <Image src="/assets/illustration-mockups.svg" width={["100%", "80%"]} />

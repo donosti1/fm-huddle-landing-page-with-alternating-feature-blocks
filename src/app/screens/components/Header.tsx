@@ -1,16 +1,5 @@
-import React, {useEffect, useState} from "react";
-import {
-  Button,
-  Container,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalBody,
-  Icon,
-  Link,
-  Stack,
-  useDisclosure,
-} from "@chakra-ui/react";
+import React from "react";
+import {Button, Container, Stack} from "@chakra-ui/react";
 
 import Logo from "./Logo";
 const Header = () => {
